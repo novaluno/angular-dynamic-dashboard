@@ -42,3 +42,23 @@
     column-count: 3;
   }
 }
+
+// Make Telerik Grid more compact
+
+.k-grid-header .k-header > .k-link {
+    padding: .3rem;
+    margin: -.3rem;
+    font-weight: 600;
+    color: #797979;
+}
+
+.k-grid th, .k-grid td {
+    padding: .3rem;
+    font-size: .9rem;
+    color: #797979;
+}
+
+.k-grid thead .col-align-right,
+.k-grid tr .col-align-right {
+    text-align: right;
+}

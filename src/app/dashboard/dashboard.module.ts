@@ -7,6 +7,10 @@ import { NewsUpdatesComponent } from './news-updates/news-updates.component';
 import { DataUpdatesComponent } from './data-updates/data-updates.component';
 import { WidgetHostDirective } from './widget-host.directive';
 import { WidgetControllerComponent } from './widget-controller/widget-controller.component';
+import { AreaChartComponent } from './area-chart/area-chart.component';
+import { ChartsModule } from '@progress/kendo-angular-charts';
+import { ProductsGridComponent } from './products-grid/products-grid.component';
+import { GridModule } from '@progress/kendo-angular-grid';
 
 @NgModule({
   declarations: [
@@ -14,14 +18,20 @@ import { WidgetControllerComponent } from './widget-controller/widget-controller
     NewsUpdatesComponent,
     DataUpdatesComponent,
     WidgetHostDirective,
-    WidgetControllerComponent],
+    WidgetControllerComponent,
+    AreaChartComponent,
+    ProductsGridComponent],
   imports: [
     CommonModule,
+    ChartsModule,
+    GridModule,
     DashboardRoutingModule
   ],
   entryComponents: [
     NewsUpdatesComponent,
-    DataUpdatesComponent
+    DataUpdatesComponent,
+    AreaChartComponent,
+    ProductsGridComponent
   ],
 })
 export class DashboardModule { }
