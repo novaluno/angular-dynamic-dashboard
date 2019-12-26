@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { WidgetItem } from './models/widget-item';
+import { WidgetService } from './widget.service';
 
 @Component({
   selector: 'app-dashboard',
@@ -9,9 +11,14 @@ export class DashboardComponent implements OnInit {
 
   title = 'Dashboard';
 
-  constructor() { }
+  widgets: WidgetItem[];
+
+  constructor(
+    private widgetService: WidgetService
+  ) { }
 
   ngOnInit() {
+    this.widgets = this.widgetService.getWidgets();
   }
 
 }
