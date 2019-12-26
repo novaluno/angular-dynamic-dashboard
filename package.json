@@ -8,6 +8,7 @@
     "build": "ng build",
     "build:prod": "ng build --prod",
     "build:prod:folder": "ng build --prod --base-href=./",
+    "git": "ng build --prod --output-path docs --base-href=./",
     "test": "ng test",
     "lint": "ng lint --type-check --format stylish",
     "lint:fix": "ng lint --type-check --fix --format stylish",
