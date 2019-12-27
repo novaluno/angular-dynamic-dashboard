@@ -62,3 +62,32 @@
 .k-grid tr .col-align-right {
     text-align: right;
 }
+
+// Widgets
+
+.widget-container {
+  position: relative;
+}
+
+.widget-editor {
+  background-color: #FFFFFF;
+  border: 1px solid #D2D3D4;
+  position: absolute;
+  text-align: center;
+  //padding: 3px;
+  //margin-bottom: -6px;
+  z-index: 1;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  cursor: pointer;
+}
+
+.widget-toolbar .btn {
+  margin-right: 5px;
+  min-width: 40px;
+}
+
+.top-command-bar .btn {
+    margin-right: 3px;
+}

@@ -6,10 +6,13 @@
             </kendo-grid-column>
             <kendo-grid-column field="ProductName" title="Name" width="150">
             </kendo-grid-column>
-            <kendo-grid-column field="Category.CategoryName" title="Category">
+            <kendo-grid-column field="Category.CategoryName" title="Category" width="120">
             </kendo-grid-column>
             <kendo-grid-column field="UnitPrice" title="Price" width="80">
             </kendo-grid-column>
         </kendo-grid>
+    </div>
+    <div *ngIf="showWidgetEditor" class="card-footer">
+        <app-widget-editor></app-widget-editor>
     </div>
 </div>

@@ -10,6 +10,7 @@ import { WidgetComponent } from '../models/widget-component';
 })
 export class WidgetControllerComponent implements OnInit, OnDestroy {
 
+  @Input() showWidgetEditor: boolean;
   @Input() widgets: WidgetItem[];
   currentWidgetIndex = -1;
   @ViewChild(WidgetHostDirective, { static: true }) widgetHost: WidgetHostDirective;

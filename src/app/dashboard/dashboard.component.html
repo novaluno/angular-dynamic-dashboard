@@ -1,9 +1,19 @@
 <div class="container-fluid mt-3">
 
-    <div>
-        <a class="btn btn-primary" routerLink="/home">Home</a>
+    <h3>Dashboard</h3>
+
+    <div class="my-3">
+        <a class="btn btn-primary" routerLink="/home">Return Home</a>
+        <span class="top-command-bar float-right" style="display:inline-block; width: 150px; text-align: right;">
+            <button class="btn btn-outline-secondary" title="Edit Dashboard" (click)="editDashboard($event)"
+                *ngIf="showWidgetEditor === false"> <i class="fa fa-pencil-square-o"></i></button>
+            <button class="btn btn-outline-secondary" title="Cancel Changes" (click)="cancelChanges($event)"
+                *ngIf="showWidgetEditor === true"><i class="fa fa-close"></i></button>
+            <button class="btn btn-outline-secondary" title="Save Changes" (click)="saveChanges($event)"
+                *ngIf="showWidgetEditor === true"><i class="fa fa-floppy-o"></i></button>
+        </span>
     </div>
 
-    <app-widget-controller [widgets]="widgets"></app-widget-controller>
+    <app-widget-controller [showWidgetEditor]="showWidgetEditor" [widgets]="widgets"></app-widget-controller>
 
 </div>

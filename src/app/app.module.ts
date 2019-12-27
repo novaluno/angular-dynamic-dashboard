@@ -13,6 +13,9 @@ import { ButtonsModule } from '@progress/kendo-angular-buttons';
 import { DropDownsModule } from '@progress/kendo-angular-dropdowns';
 import { GridModule } from '@progress/kendo-angular-grid';
 import { PDFExportModule } from '@progress/kendo-angular-pdf-export';
+import { PopupModule } from '@progress/kendo-angular-popup';
+import { ToolBarModule } from '@progress/kendo-angular-toolbar';
+
 
 @NgModule({
   declarations: [
@@ -29,7 +32,9 @@ import { PDFExportModule } from '@progress/kendo-angular-pdf-export';
     ButtonsModule,
     DropDownsModule,
     GridModule,
-    PDFExportModule
+    PDFExportModule,
+    PopupModule,
+    ToolBarModule
   ],
   providers: [
     Title

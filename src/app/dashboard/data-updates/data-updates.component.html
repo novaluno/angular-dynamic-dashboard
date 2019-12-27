@@ -4,4 +4,7 @@
         <h5 class="card-title">{{data.name}}</h5>
         <p class="card-text">{{data.bio}}</p>
     </div>
+    <div *ngIf="showWidgetEditor" class="card-footer">
+        <app-widget-editor></app-widget-editor>
+    </div>
 </div>

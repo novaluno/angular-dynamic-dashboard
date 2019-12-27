@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { WidgetComponent } from '../models/widget-component';
+import { DashboardService } from '../dashboard.service';
 
 @Component({
   selector: 'app-area-chart',
@@ -10,9 +11,16 @@ export class AreaChartComponent implements WidgetComponent, OnInit {
 
   @Input() data: any;
 
-  constructor() { }
+  showWidgetEditor = false;
+
+  constructor(
+    private dashboardService: DashboardService
+  ) { }
 
   ngOnInit() {
+    this.dashboardService.widgetEditMode.subscribe((showWidgetEditor: boolean) => {
+      this.showWidgetEditor = showWidgetEditor;
+    });
   }
 
 }

@@ -11,6 +11,9 @@ import { AreaChartComponent } from './area-chart/area-chart.component';
 import { ChartsModule } from '@progress/kendo-angular-charts';
 import { ProductsGridComponent } from './products-grid/products-grid.component';
 import { GridModule } from '@progress/kendo-angular-grid';
+import { WidgetEditorComponent } from './widget-editor/widget-editor.component';
+import { ToolBarModule } from '@progress/kendo-angular-toolbar';
+import { ButtonsModule } from '@progress/kendo-angular-buttons';
 
 @NgModule({
   declarations: [
@@ -20,11 +23,14 @@ import { GridModule } from '@progress/kendo-angular-grid';
     WidgetHostDirective,
     WidgetControllerComponent,
     AreaChartComponent,
-    ProductsGridComponent],
+    ProductsGridComponent,
+    WidgetEditorComponent],
   imports: [
     CommonModule,
+    ButtonsModule,
     ChartsModule,
     GridModule,
+    ToolBarModule,
     DashboardRoutingModule
   ],
   entryComponents: [

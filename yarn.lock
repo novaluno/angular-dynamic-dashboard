@@ -979,6 +979,14 @@
     "@progress/kendo-schematics" "^1.0.0"
     tslib "^1.9.0"
 
+"@progress/kendo-angular-toolbar@^2.2.1":
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/@progress/kendo-angular-toolbar/-/kendo-angular-toolbar-2.2.1.tgz#933b1b1ce36d53488c963a4bc4e9c6b2a2170ac1"
+  integrity sha512-YsTDUKqWZPf7ub6kKygTgHRuP3nIRcFOyoH0aFWXHK6GSwrmJAM85m73g/djeUKxBsm/n/Jt6/jxtUk6UgBMJA==
+  dependencies:
+    "@progress/kendo-schematics" "^1.0.0"
+    tslib "^1.9.0"
+
 "@progress/kendo-charts@^1.13.5":
   version "1.13.6"
   resolved "https://registry.yarnpkg.com/@progress/kendo-charts/-/kendo-charts-1.13.6.tgz#6533831f07de9d339f67563f7a85efc377826d29"
