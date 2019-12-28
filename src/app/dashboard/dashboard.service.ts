@@ -10,7 +10,7 @@ export class DashboardService {
 
   constructor() { }
 
-  setWidgetEditMode(showEditor: boolean) {
-    this.widgetEditMode.next(showEditor);
+  setWidgetEditMode(showWidgetEditor: boolean) {
+    this.widgetEditMode.next(showWidgetEditor);
   }
 }
